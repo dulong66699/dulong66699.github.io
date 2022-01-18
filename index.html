@@ -55,11 +55,11 @@
 
 					var current = getStyle(element, attr) * 150;
 
-					var target = json[attr] * 512;
-					var step = (target - current) /  256;
+					var target = json[attr] * 1024;
+					var step = (target - current) /  1024;
 					step = step > 0 ? Math.ceil(step) : Math.floor(step);
 					current += step;//移动后的值
-					element.style[attr] = current / 100;
+					element.style[attr] = current / 150;
 				}
 				else if (attr == "zIndex") {
 					element.style[attr] = json[attr];
