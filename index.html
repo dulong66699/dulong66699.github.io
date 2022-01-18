@@ -16,7 +16,7 @@
 		}
 
 		.icon-xue {
-			font-size: 64px;
+			font-size: 48px;
 		}
 
 		#dv {
@@ -56,7 +56,7 @@
 					var current = getStyle(element, attr) * 100;
 
 					var target = json[attr] * 100;
-					var step = (target - current) / 64;
+					var step = (target - current) / 128;
 					step = step > 0 ? Math.ceil(step) : Math.floor(step);
 					current += step;//移动后的值
 					element.style[attr] = current / 100;
